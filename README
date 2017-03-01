@@ -1,0 +1,6 @@
+Formulating a given problem as SAT
+Given Problem: Given 2 directed Graphs G and G', Find a one-one mapping M fromm nodes in G to nodes in G' such that there is an edge from v1 to v2 in G if and d only if there is an edge from M(v1) to M(v2) in G’. This mapping problem is converted into CNF SAT formula which will be input to miniSAT. run2.sh takes the SAT assignment and converts it into an actual mapping from nodes to G to nodes of G’, if there exists one.
+Step 1. compile.sh
+Step 2. run1.sh <filename> # where the input file is "filename.graphs"
+Step 3. minisat <filename.satinput> <filename.satoutput>
+Step 4. run2.sh <filename> # creates a file named "mapping"
